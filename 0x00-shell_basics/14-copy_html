@@ -1,2 +1,2 @@
-#!/bin/bash
-cp -u -r *.html "$parent_dir"
+#!/bin/bas
+find . -maxdepth 1 -name "*.html" -newer ../ -exec cp -u {} ../ \;
