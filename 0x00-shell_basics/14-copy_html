@@ -1,2 +1,2 @@
-#!/bin/bas
+#!/bin/bash
 find . -maxdepth 1 -name "*.html" -newer ../ -exec cp -u {} ../ \;
