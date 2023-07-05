@@ -1,2 +1,2 @@
 #!/bin/bash
-Ls -xamp
+ls -1A | awk '{ORS = (NR%2 == 0) ? ", " : "\n"; if (substr($0, 1, 1) == "." && $0 != "./" && $0 != "../") {print $0} else {print $0 (/\/$/ ? "/" : "")}}' | sort -df
